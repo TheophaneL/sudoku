@@ -10,9 +10,11 @@ grille::grille(int taille){
 
 std::string grille::tostring(){
   std::string stringGrille;
-
+  stringGrille +=" A|B|C#D|E|F#H|I|G\n";
+  int compte(0);
   for(int groupe = 0; groupe < 3; ++groupe){
       for(int ligne = 0; ligne < 3; ++ligne){
+          stringGrille +="#";
           for(int j = 0; j < 3; ++j){
               carre lacase = this->lagrille->at(j+(groupe*3));
               for(int k = 0; k < 3; ++k){
@@ -25,8 +27,9 @@ std::string grille::tostring(){
                     }
                   else if(k==2 && j==2){
                       stringGrille += "\n";
+
                       if(ligne == 2 && groupe<2){
-                          for(int x = 0; x < 17;++x) stringGrille += "#";
+                          for(int x = 0; x < 19;++x) stringGrille += "#";
                           stringGrille += "\n";
                         }
                     }
