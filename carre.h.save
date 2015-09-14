@@ -1,0 +1,11 @@
+#incl
+ude <string>
+
+class carre{
+public:
+  int *cases;
+
+  carre(int nb);
+  std::string tostring();
+  
+};

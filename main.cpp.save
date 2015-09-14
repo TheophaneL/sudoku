@@ -1,0 +1,21 @@
+#include <stdlib.h>
+#include <iostream>
+#include <string>
+#include "grille.h"
+
+using namespace std;
+
+int main(){
+  sys
+  
+1cout<<" Test de prog affichage de grille de sudoku!" << endl;
+  grille grille1(0);
+  string visiongrille = grille1.tostring();
+  cout<< visiongrille << endl;
+
+  carre carre1(0);
+  string viscarre = carre1.tostring();
+  cout << viscarre << endl;
+
+return 0;
+}
