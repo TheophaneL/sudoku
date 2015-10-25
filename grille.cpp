@@ -10,10 +10,12 @@ grille::grille(int taille){
 
 std::string grille::tostring(){
   std::string stringGrille;
-  stringGrille +=" A|B|C#D|E|F#H|I|G\n";
+  stringGrille +="  A|B|C#D|E|F#H|I|G\n";
+  std::string l = "abcdefghi";
   int compte(0);
   for(int groupe = 0; groupe < 3; ++groupe){
       for(int ligne = 0; ligne < 3; ++ligne){
+          stringGrille += l[ligne+(groupe*3)];
           stringGrille +="#";
           for(int j = 0; j < 3; ++j){
               carre lacase = this->lagrille->at(j+(groupe*3));
@@ -39,6 +41,7 @@ std::string grille::tostring(){
                 }
             }
         }
+      compte++;
     }
   return stringGrille;
 }
