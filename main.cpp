@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <iostream>
 #include <string>
-#include "grille.h"
-#include "carre.h"
+#include "interface/grille.h"
+#include "interface/carre.h"
 
 using namespace std;
 
